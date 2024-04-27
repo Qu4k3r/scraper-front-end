@@ -1,0 +1,35 @@
+section {
+    width: 190px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0 2rem;
+}
+
+section:last-child {
+    margin-top: 0;
+}
+
+.image-container {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+.post-container {
+    .separator {
+        background-color: #D7D4D0;
+        height: 1px;
+        border-radius: 5px;
+    }
+}
