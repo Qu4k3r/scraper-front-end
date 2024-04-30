@@ -9,7 +9,7 @@ RUN yarn
 
 COPY . .
 
-RUN yarn 
+RUN yarn build
 
 # Stage 2: Serve the React application using Nginx
 FROM nginx:stable-alpine
