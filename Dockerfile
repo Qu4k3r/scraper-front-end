@@ -5,13 +5,11 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install -g yarn
-
-RUN yarn
+RUN npm ci
 
 COPY . .
 
-RUN yarn build
+RUN npm run build
 
 # Stage 2: Serve the React application using Nginx
 FROM nginx:stable-alpine
